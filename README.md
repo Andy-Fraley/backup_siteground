@@ -9,6 +9,7 @@ transfers) and zips all non-newest backups to save on local disk space.
 Operation of this utility is controlled by the (encrypted) vault.yml configuration file.  Settings in the file are as
 follows.
 
+```
 gmail:
     user: <gmail_username>
     password: <gmail_password>
@@ -34,6 +35,7 @@ sites:
         ...
     siteN:
         ...
+```
 
 SSH credentials for SiteGround can be found on site Devs | SSH Keys Manager page.  MySQL credentials are best found
 in SiteGround under Site | File Manager and viewing wp-config.php.
