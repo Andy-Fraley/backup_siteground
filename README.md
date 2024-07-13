@@ -38,7 +38,7 @@ sites:
 ```
 
 <table><tr><td>
-NOTE:  A sample vault file, sample_vault.yml, is provided as a template.  It's temporary password is 'password'.  To
+NOTE:  A sample vault file, sample_vault.yml, is provided as a template.  Its temporary password is 'password'.  To
 change its password, use ansible-vault rekey sample_vault.yml.  And to use it, rename it vault.yml (which is the
 default name for the credentials and settings config file for the backup_siteground.py utility).
 </td></tr></table>
