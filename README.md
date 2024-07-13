@@ -37,6 +37,12 @@ sites:
         ...
 ```
 
+<table><tr><td>
+NOTE:  A sample vault file, sample_vault.yml, is provided as a template.  It's temporary password is 'password'.  To
+change its password, use ansible-vault rekey sample_vault.yml.  And to use it, rename it vault.yml (which is the
+default name for the credentials and settings config file for the backup_siteground.py utility).
+</td></tr></table>
+
 SSH credentials for SiteGround can be found on site Devs | SSH Keys Manager page.  MySQL credentials are best found
 in SiteGround under Site | File Manager and viewing wp-config.php.
 
@@ -50,7 +56,7 @@ hits an untrusted host or encounters some other sort of SSH key error).
 To establish an SSH connection, create and download an SSH key from SiteGround and store in ~/.ssh (recommended file
 name format domain_com__ssh_key) and chmod it to 600.  Then do ssh-add on the new key (you will be prompted for the
 key's passphrase).  Then test it by doing 'ssh -p 18765 <ssh_username>@<ssh_hostname> -i
-~/.ssh/ingomarchurch_org__ssh_key' to open a test connection.  If asked prompted about new your key like below, type
+~/.ssh/domain_ext__ssh_key' to open a test connection.  If asked prompted about new your key like below, type
 'yes' to continue.
 
     This key is not known by any other names.
